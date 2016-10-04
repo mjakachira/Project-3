@@ -1,0 +1,204 @@
+/*******STYLESHEET FOR PROJECT 3********/
+
+/****FONT****/
+@import 'https://fonts.googleapis.com/css?family=Lora';
+
+
+/******MOBILE/GENERAL*********/
+
+body {
+    font-family: 'Lora', serif; 
+    background-color: black;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+fieldset {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-resp {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 1.35em;
+    font-size: 1.45em;
+    letter-spacing: 2px;
+    
+    
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1em
+}
+
+.signup {
+    text-align: center;
+}
+
+.form-wrapper {
+    margin: 0 .5em
+}
+
+input[type=text], input[type=tel], input[type=email], select, textarea, input[type=number] {
+    width: 100%;
+    padding: .95em 0;
+    background-color: whitesmoke;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+   
+}
+
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, select:focus, textarea:focus, input[type=number]:focus {
+    box-shadow: 0 0 5px deepskyblue;
+    border: 1px solid deepskyblue;
+    border-radius: 10px 10px 10px 10px;
+    background-color:dimgrey;
+    color: white;
+    outline: none;
+    -moz-transition: 0.50s all ease;
+    -ms-transition: 0.50s all ease;
+    -o-transition: 0.50s all ease;
+    -webkit-transition: 0.50s all ease;
+    transition: 0.50s all ease;
+}
+
+legend {
+    font-size: 1.60em;
+    padding: .50em 0 .30em 0;
+    font-weight: 600;
+}
+
+label{
+    color: darkgrey;
+    font-size: 1.10em;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-align: right;
+    padding-right: 15px;
+    font-style: italic;
+    
+    
+    
+}
+
+hr.hrmain {
+    border-top: 2px double;
+    margin-bottom: 4px;
+    
+    
+}
+
+hr {
+    margin-top: 6px;
+}
+
+.signup p {
+    padding-bottom: 20px;
+    font-size: 1.15em;
+}
+
+.signup h3 {
+    font-size: 1.40em;
+}
+
+ul.newsletter li {
+    padding: .25em 0
+}
+
+input[type="checkbox"]:checked, input[type="radio"]:checked   {
+   outline: 1px solid white;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+[type=submit] {
+    width: 100%;
+    padding: .65em 0;
+    border-radius: 10px;
+    font-size: 1.50em;
+    background-color: deepskyblue;
+    border:none;
+}
+
+[type=submit]:hover {
+    background-color: aliceblue;
+    -moz-transition: 0.50s all ease;
+    -ms-transition: 0.50s all ease;
+    -o-transition: 0.50s all ease;
+    -webkit-transition: 0.50s all ease;
+    transition: 0.50s all ease;
+    
+}
+
+[type=submit]:hover, input[type="checkbox"]:hover, input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+}
+
+/****DESKTOP SCREENS****/
+
+@media all and (min-width: 760px){
+    
+    body {
+        width: 760px;
+        margin: 0 auto;
+        background-color: black;
+    }
+      
+    
+    input[type=text], input[type=tel], input[type=email], select{
+        width: 70%;
+    }
+    
+    input[type=text].number {
+        width: 30%;
+    }
+    
+    .main-contact p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .newsletter-image img {
+        max-width: 300px;
+        border-radius: 10px;
+    }
+    
+    .newsletter-main {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+    }
+    
+}
+
+
+
+
